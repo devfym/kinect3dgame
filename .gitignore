@@ -1,0 +1,13 @@
+*.suo
+*.vcxproj.user
+*.sdf
+ipch
+Log.txt
+/Debug/*.obj
+/Debug/*.ilk
+/Debug/*.pdb
+/Debug/*.idb
+/Debug/*.log
+/Debug/kinect3dgame.tlog/*
+/.idea
+/.vs
