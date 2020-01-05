@@ -32,15 +32,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	SetGraphMode(800, 600, 32);
 	ChangeWindowMode(TRUE);
 	SetDrawScreen(DX_SCREEN_BACK);
-
-	while (!ScreenFlip() && !ProcessMessage() && !ClearDrawScreen())
-	{
+	
+	while (!ScreenFlip() && !ProcessMessage() && !ClearDrawScreen()) {
 		if (CheckHitKey(KEY_INPUT_Z) == 1)
 			break;
 	}
 	
 	DxLib_End();
-
+	
 	return 0;
-
 }
